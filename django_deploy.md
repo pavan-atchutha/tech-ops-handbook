@@ -1,6 +1,21 @@
 # 🚀 Django Production Deployment Guide (Ubuntu + Gunicorn + Nginx + SQLite + Cron + IST Timezone)
 
 ---
+	Just for Understanding
+		Client (Browser)
+		  |
+		  v
+	  ┌──────────┐
+	  │  Nginx   │  ← handles HTTPS, static files, reverse proxy
+	  └──────────┘
+		   |
+		   v
+	  ┌────────────┐
+	  │  Gunicorn  │  ← runs your Flask/Django app (WSGI server)
+	  └────────────┘
+		   |
+		   v
+	   Your Python App
 
 ## 📦 1. Pre-Deployment (Local Machine)
 
