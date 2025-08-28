@@ -243,7 +243,9 @@ Paste:
 ```bash
 * * * * * /bin/bash /home/user/project_name/your_project/run_tasks.sh > /dev/null 2>&1 &
 ```
-Basic Syntax:
+---
+# Basic Syntax:
+```bash
 			* * * * * command_to_run
 			│ │ │ │ │
 			│ │ │ │ └─ Day of the week (0-6) (0 = Sunday)
@@ -251,7 +253,8 @@ Basic Syntax:
 			│ │ └───── Day of the month (1-31)
 			│ └─────── Hour (0-23)
 			└───────── Minute (0-59)
----
+
+```
 
 ### 🛠️ Manage Cron
 
