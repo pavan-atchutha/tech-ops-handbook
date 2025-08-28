@@ -92,14 +92,14 @@ sudo -i -u postgres
 psql
 
 ## Inside psql — Create DB and User
--- Replace these with your actual values
+#### Replace these with your actual values
 CREATE DATABASE my_db;
 CREATE USER my_user WITH PASSWORD 'my_secure_password';
 
--- Grant privileges
+#### Grant privileges
 GRANT ALL PRIVILEGES ON DATABASE my_db TO my_user;
 
--- Optional: Grant schema access (for advanced use)
+#### Optional: Grant schema access (for advanced use)
 GRANT USAGE ON SCHEMA public TO my_user;
 GRANT CREATE ON SCHEMA public TO my_user;
 
