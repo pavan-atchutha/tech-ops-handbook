@@ -80,6 +80,7 @@ pip install -r requirements.txt
 
 ## 📥 PostgreSQL Setup (For Production)
 
+```psql
 #### Install PostgreSQL
 sudo apt install postgresql postgresql-contrib
 
@@ -105,6 +106,8 @@ GRANT CREATE ON SCHEMA public TO my_user;
 
 \q   -- Exit psql
 exit -- Exit postgres shell
+```
+
 
 
 ## 🔄 6. Migrations & Superuser
