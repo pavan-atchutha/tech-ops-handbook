@@ -273,6 +273,23 @@ chmod +x /home/user/project_name/your_project/run_tasks.sh
 
 ---
 
+### if .sh not working
+Your .sh file likely has Windows-style line endings (CRLF) instead of Unix-style (LF), causing the bash interpreter error.
+Run dos2unix run_script.sh to convert it to Unix format and fix the problem.
+
+
+
+sudo apt update
+sudo apt install dos2unix
+
+
+| Step                            | Command                                   |
+| ------------------------------- | ----------------------------------------- |
+| 1. Convert to Unix line endings | `dos2unix run_script.sh`                  |
+| 2. Make executable              | `chmod +x run_script.sh`                  |
+| 3. Run                          | `./run_script.sh` or `bash run_script.sh` |
+
+
 ### 🗓️ Add to Crontab
 
 ```bash
